@@ -101,7 +101,103 @@
 //画双弧度曲线
 - (IBAction)shuangHuDuQuXian:(UIButton *)sender {
     
+    CGPoint statrPoint=CGPointMake(50, 300);
+    CGPoint endPoint=CGPointMake(300, 300);
+    CGPoint controlPoint1=CGPointMake(150, 200);
+    CGPoint controlPoint2=CGPointMake(200, 400);
     
+    CAShapeLayer *layer1=[CAShapeLayer layer];
+    layer1.frame=CGRectMake(statrPoint.x, statrPoint.y, 5, 5);
+    layer1.backgroundColor=[UIColor redColor].CGColor;
+    
+    CAShapeLayer *layer2=[CAShapeLayer layer];
+    layer2.frame=CGRectMake(endPoint.x, endPoint.y, 5, 5);
+    layer2.backgroundColor=[UIColor redColor].CGColor;
+    
+    CAShapeLayer *layer3=[CAShapeLayer layer];
+    layer3.frame=CGRectMake(controlPoint1.x, controlPoint1.y, 5, 5);
+    layer3.backgroundColor=[UIColor redColor].CGColor;
+    
+    CAShapeLayer *layer4=[CAShapeLayer layer];
+    layer4.frame=CGRectMake(controlPoint2.x, controlPoint2.y, 5, 5);
+    layer4.backgroundColor=[UIColor redColor].CGColor;
+
+    
+    
+    CAShapeLayer *layer=[CAShapeLayer layer];
+    UIBezierPath *path=[[UIBezierPath alloc]init];
+    [path moveToPoint:statrPoint];
+ 
+    
+    //关键
+    [path addCurveToPoint:endPoint controlPoint1:controlPoint1 controlPoint2:controlPoint2];//Curve==曲线 第一个参数：终点 第二个参数：控制点====画出的曲线是往控制点的方向凸出的，并且凸出的幅度是起点和终点的连线到控制点的垂直距离的一半 第三个参数：控制点
+    layer.path=path.CGPath;
+    
+    layer.fillColor=[UIColor clearColor].CGColor;
+    layer.strokeColor=[UIColor blackColor].CGColor;
+    [self.view.layer addSublayer:layer];
+    [self.view.layer addSublayer:layer1];
+    [self.view.layer addSublayer:layer2];
+    [self.view.layer addSublayer:layer3];
+    [self.view.layer addSublayer:layer4];
     
 }
+//动画绘制曲线
+- (IBAction)dongHuaHuiZhiQuXian:(UIButton *)sender{
+    
+    
+    CGPoint statrPoint=CGPointMake(50, 300);
+    CGPoint endPoint=CGPointMake(300, 300);
+    CGPoint controlPoint1=CGPointMake(150, 200);
+    CGPoint controlPoint2=CGPointMake(200, 400);
+    
+    CAShapeLayer *layer1=[CAShapeLayer layer];
+    layer1.frame=CGRectMake(statrPoint.x, statrPoint.y, 5, 5);
+    layer1.backgroundColor=[UIColor redColor].CGColor;
+    
+    CAShapeLayer *layer2=[CAShapeLayer layer];
+    layer2.frame=CGRectMake(endPoint.x, endPoint.y, 5, 5);
+    layer2.backgroundColor=[UIColor redColor].CGColor;
+    
+    CAShapeLayer *layer3=[CAShapeLayer layer];
+    layer3.frame=CGRectMake(controlPoint1.x, controlPoint1.y, 5, 5);
+    layer3.backgroundColor=[UIColor redColor].CGColor;
+    
+    CAShapeLayer *layer4=[CAShapeLayer layer];
+    layer4.frame=CGRectMake(controlPoint2.x, controlPoint2.y, 5, 5);
+    layer4.backgroundColor=[UIColor redColor].CGColor;
+    
+    
+    
+    CAShapeLayer *layer=[CAShapeLayer layer];
+    
+    //UIBezierPath负责绘制曲线
+    UIBezierPath *path=[[UIBezierPath alloc]init];
+    [path moveToPoint:statrPoint];
+    
+    //关键
+    [path addCurveToPoint:endPoint controlPoint1:controlPoint1 controlPoint2:controlPoint2];//Curve==曲线 第一个参数：终点 第二个参数：控制点====画出的曲线是往控制点的方向凸出的，并且凸出的幅度是起点和终点的连线到控制点的垂直距离的一半 第三个参数：控制点
+    layer.path=path.CGPath;
+    
+    //CABasicAnimation负责展示绘制动画
+    CABasicAnimation *basicAnimation=[[CABasicAnimation alloc]init];
+    //用了strokeEnd这个属性的值范围是0-1，动画显示了从0到1之间每一个值对这条曲线的影响
+    basicAnimation.keyPath=@"strokeEnd";//keyPath填的是layer的属性，
+    basicAnimation.fromValue=[NSNumber numberWithInt:0];
+    basicAnimation.toValue=[NSNumber numberWithInt:1];
+    basicAnimation.duration=3.0;
+    
+    [layer addAnimation:basicAnimation forKey:nil];//给图层增加动画
+    
+    layer.fillColor=[UIColor clearColor].CGColor;//填充颜色
+    layer.strokeColor=[UIColor blackColor].CGColor;//边框颜色
+    [self.view.layer addSublayer:layer];
+    [self.view.layer addSublayer:layer1];
+    [self.view.layer addSublayer:layer2];
+    [self.view.layer addSublayer:layer3];
+    [self.view.layer addSublayer:layer4];
+
+}
+
+
 @end

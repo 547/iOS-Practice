@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAO-jz-nzV">
-                                <rect key="frame" x="20" y="28" width="86" height="30"/>
+                                <rect key="frame" x="20" y="13" width="86" height="30"/>
                                 <state key="normal" title="矩形"/>
                                 <connections>
                                     <action selector="juXing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eoX-1D-BW9"/>
@@ -29,24 +29,32 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFg-V9-DKa">
-                                <rect key="frame" x="143" y="26" width="86" height="30"/>
+                                <rect key="frame" x="143" y="11" width="86" height="30"/>
                                 <state key="normal" title="圆形"/>
                                 <connections>
                                     <action selector="yuanXing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwR-FK-wnb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4M-SV-SEC">
-                                <rect key="frame" x="265" y="28" width="86" height="30"/>
+                                <rect key="frame" x="265" y="13" width="86" height="30"/>
                                 <state key="normal" title="画曲线"/>
                                 <connections>
                                     <action selector="huaQuXian:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PAG-WM-2E4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4e-RJ-3Jd">
-                                <rect key="frame" x="265" y="73" width="98" height="29"/>
+                                <rect key="frame" x="265" y="58" width="98" height="29"/>
                                 <state key="normal" title="画双弧度曲线"/>
                                 <connections>
                                     <action selector="shuangHuDuQuXian:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0q-Oy-n8L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxv-yO-NZa">
+                                <rect key="frame" x="147" y="56" width="99" height="31"/>
+                                <state key="normal" title="动画绘制曲线"/>
+                                <connections>
+                                    <action selector="dongHuaHuiZhiQuXian:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vR5-gC-Fdq"/>
+                                    <action selector="yuanXing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FIc-kB-EdY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="399"/>
+            <point key="canvasLocation" x="359" y="327"/>
         </scene>
     </scenes>
 </document>

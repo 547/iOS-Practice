@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 - (IBAction)juXing:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIView *huaBan;
+- (IBAction)dongHuaHuiZhiQuXian:(UIButton *)sender;
 
 - (IBAction)yuanXing:(UIButton *)sender;
 
