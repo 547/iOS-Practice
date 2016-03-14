@@ -24,6 +24,14 @@
             People *p=[[People alloc]init];
         }
         
+        
+        //如果是mrc下，解决方法如下：
+        //        NSAutoreleasePool *pool =[[NSAutoreleasePool alloc]init];
+        //        People * p =[[People alloc]init];
+        //        [p release];
+        //        [pool release];
+
+        
     }
 }
 
