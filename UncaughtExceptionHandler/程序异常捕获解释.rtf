@@ -1,0 +1,138 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red65\green182\blue69;\red127\green127\blue127;\red178\green24\blue137;
+\red0\green160\blue190;\red131\green192\blue87;\red219\green44\blue56;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+
+\f1 \'b3\'cc\'d0\'f2\'d2\'ec\'b3\'a3\'b2\'b6\'bb\'f1\'a3\'ac\'cb\'d7\'b3\'c6\'a3\'ba\'c2\'f1\'ba\'f3\'c3\'c5\'a3\'bb\
+\
+\'d6\'f7\'d2\'aa\'d7\'f7\'d3\'c3\'ca\'c7\'ce\'aa\'c1\'cb\'bb\'f1\'c8\'a1\'a3\'ac\'d4\'da\'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2\'d2\'d1\'be\'ad\'c9\'cf\'bc\'dc\'ba\'f3\'a3\'ac\'d3\'a6\'d3\'c3\'d4\'da\'bf\'cd\'bb\'a7\'b5\'c4\'bb\'fa\'d7\'d3\'c9\'cf\'b7\'a2\'c9\'fa\'b1\'c0\'c0\'a3\'ba\'f3\'a3\'ac\'cd\'a8\'b9\'fd\'b7\'fe\'ce\'f1\'c6\'f7\'bb\'f1\'c8\'a1\'b1\'c0\'c0\'a3\'cf\'e0\'b9\'d8\'d0\'c5\'cf\'a2\'a3\'ac\'d2\'d4\'b1\'e3\'bc\'b0\'ca\'b1\'d0\'de\'b8\'b4\'b8\'fc\'d0\'c2\
+\
+PS\'a3\'ba\'b3\'cc\'d0\'f2\'d2\'ec\'b3\'a3\'b2\'b6\'bb\'f1\'b5\'c4\'b4\'fa\'c2\'eb\'d0\'b4\'d4\'daAPPDelegate.m\'ce\'c4\'bc\'fe\'c0\'ef\'c3\'e6\'a1\'a3\
+\
+\
+\'d6\'f7\'d2\'aa\'b4\'fa\'c2\'eb\
+\
+\pard\tx1155\pardeftab1155\pardirnatural
+
+\f2\fs48 \cf2 \CocoaLigature0 //
+\f1 \'d2\'ec\'b3\'a3\'b2\'b6\'bb\'f1
+\f2 \cf3 \
+-(\cf4 void\cf3 )getBugReson\
+\{\
+    \cf2 //
+\f1 \'d0\'e8\'d2\'aa\'b5\'f7\'d3\'c3
+\f2 C
+\f1 \'b5\'c4\'ba\'af\'ca\'fd
+\f2 \cf3 \
+    \cf5 NSSetUncaughtExceptionHandler\cf3 (&\cf6 getException\cf3 );\
+\}\
+\cf2 //C
+\f1 \'b5\'c4\'ba\'af\'ca\'fd
+\f2 \cf3 \
+\cf4 void\cf3  getException(\cf5 NSException\cf3  *exception)\
+\{\
+\cf2 //1.
+\f1 \'d2\'bb\'b5\'a9\'bd\'f8\'c8\'eb\'b5\'bd\'b8\'c3\'b7\'bd\'b7\'a8
+\f2  
+\f1 \'c4\'c7\'c3\'b4\'b3\'cc\'d0\'f2\'ca\'c7\'bf\'cf\'b6\'a8\'d2\'aa\'b9\'d2\'b5\'f4\'b5\'c4
+\f2  
+\f1 \'d2\'aa\'bc\'b0\'ca\'b1\'b5\'c4\'d5\'fb\'c0\'ed\'b1\'c0\'c0\'a3\'c8\'d5\'d6\'be\'a3\'ac\'b1\'c0\'c0\'a3\'b0\'e6\'b1\'be\'a3\'ac\'b1\'c0\'c0\'a3\'c9\'e8\'b1\'b8\'a3\'ac\'d2\'d4\'bc\'b0\'b1\'c0\'c0\'a3\'ca\'b1\'bc\'e4
+\f2   
+\f1 \'bc\'b0\'ca\'b1\'b5\'c4\'b7\'a2\'cb\'cd\'b8\'f8\'b7\'fe\'ce\'f1\'c6\'f7
+\f2 \cf3 \
+   \cf5 NSString\cf3  *deviceName= [\cf5 UIDevice\cf3  \cf5 currentDevice\cf3 ].\cf5 name\cf3 ;\cf2 //
+\f1 \'bb\'f1\'c8\'a1\'c9\'e8\'b1\'b8\'b5\'c4\'c3\'fb\'b3\'c6\'c0\'fd\'c8\'e7\'a3\'ba
+\f2 "My iPhone"\cf3 \
+   \cf5 NSString\cf3  *model = [\cf5 UIDevice\cf3  \cf5 currentDevice\cf3 ].\cf5 model\cf3 ;\cf2 //
+\f1 \'bb\'f1\'c8\'a1\'c9\'e8\'b1\'b8
+\f2  
+\f1 \'c0\'fd\'c8\'e7\'a3\'ba
+\f2 @"iPhone", @"iPod touch"\cf3 \
+   \cf5 NSString\cf3  *systemVersion = [\cf5 UIDevice\cf3  \cf5 currentDevice\cf3 ].\cf5 systemVersion\cf3 ;\cf2 //
+\f1 \'bb\'f1\'c8\'a1\'c9\'e8\'b1\'b8\'b5\'c4\'cf\'b5\'cd\'b3\'b0\'e6\'b1\'be\'c8\'e7\'a3\'ba
+\f2 @"4.0"\cf3 \
+   \cf5 NSString\cf3  *systemName = [\cf5 UIDevice\cf3  \cf5 currentDevice\cf3 ].\cf5 systemName\cf3 ;\cf2 //
+\f1 \'bb\'f1\'c8\'a1\'c9\'e8\'b1\'b8\'cf\'b5\'cd\'b3\'c3\'fb\'b3\'c6\'c8\'e7\'a3\'ba
+\f2 ios\cf3 \
+   \cf5 NSDate\cf3  *now = [\cf5 NSDate\cf3  \cf5 date\cf3 ];\cf2 //
+\f1 \'bb\'f1\'c8\'a1\'b7\'a2\'c9\'fa\'b1\'c0\'c0\'a3\'ca\'b1\'bc\'e4
+\f2 \cf3 \
+    \
+\cf2 //2.
+\f1 \'bb\'f1\'c8\'a1\'b3\'cc\'d0\'f2\'b1\'c0\'c0\'a3\'b5\'c4\'d4\'ad\'d2\'f2\'b5\'c8\'cf\'e0\'b9\'d8\'d0\'c5\'cf\'a2
+\f2 \cf3 \
+    \cf2 /*\
+     @property (readonly, copy) NSString *name;==
+\f1 \'d2\'ec\'b3\'a3\'c0\'e0\'d0\'cd
+\f2 \
+     @property (nullable, readonly, copy) NSString *reason;==
+\f1 \'b7\'c7\'b3\'a3\'d6\'d8\'d2\'aa\'a3\'ac\'b1\'c0\'c0\'a3\'b5\'c4\'d4\'ad\'d2\'f2
+\f2 \
+     @property (nullable, readonly, copy) NSDictionary *userInfo;==
+\f1 \'d3\'c3\'bb\'a7\'d0\'c5\'cf\'a2
+\f2 \
+     \
+     @property (readonly, copy) NSArray<NSNumber *> *callStackReturnAddresses;\
+     @property (readonly, copy) NSArray<NSString *> *callStackSymbols;==
+\f1 \'b5\'c3\'b5\'bd\'b5\'b1\'c7\'b0\'b5\'f7\'d3\'c3\'d5\'bb\'d0\'c5\'cf\'a2
+\f2 \
+     */\cf3 \
+    \cf5 NSString\cf3  *exName=exception.\cf5 name\cf3 ;\
+    \cf5 NSString\cf3  *exReason=exception.\cf5 reason\cf3 ;\
+    \cf5 NSArray\cf3  *addresses=exception.\cf5 callStackReturnAddresses\cf3 ;\
+    \cf5 NSArray\cf3  *symbols=exception.\cf5 callStackSymbols\cf3 ;\
+\cf2 //3.
+\f1 \'bd\'ab\'b3\'cc\'d0\'f2\'b1\'c0\'c0\'a3\'c7\'b0\'bb\'f1\'c8\'a1\'b5\'c3\'b5\'bd\'b5\'c4\'d2\'ec\'b3\'a3\'d0\'c5\'cf\'a2\'b7\'a2\'cb\'cd\'b5\'bd\'b9\'ab\'cb\'be\'b5\'c4\'b7\'fe\'ce\'f1\'c6\'f7\'ce\'aa\'d2\'ec\'b3\'a3\'cc\'e1\'b9\'a9\'b5\'c4\'d7\'a8\'d3\'c3\'bd\'d3\'bf\'da
+\f2 \cf3 \
+\cf2 //3.
+\f1 \'bb\'f2\'d5\'df\'b7\'a2\'cb\'cd\'b5\'bd\'bf\'aa\'b7\'a2\'d5\'df\'b5\'c4\'d3\'ca\'cf\'e4\'a3\'ac\'b2\'bb\'b9\'fd\'b4\'cb\'d6\'d6\'b7\'bd\'ca\'bd\'d0\'e8\'d2\'aa\'b5\'c3\'b5\'bd\'d3\'c3\'bb\'a7\'b5\'c4\'d0\'ed\'bf\'c9\'a3\'ac\'d2\'f2\'ce\'aa
+\f2 iOS
+\f1 \'b2\'bb\'c4\'dc\'ba\'f3\'cc\'a8\'b7\'a2\'cb\'cd\'b6\'cc\'d0\'c5\'bb\'f2\'d5\'df\'d3\'ca\'bc\'fe\'a3\'ac\'bb\'e1\'b5\'af\'b3\'f6\'b7\'a2\'cb\'cd\'d3\'ca\'bc\'fe\'b5\'c4\'bd\'e7\'c3\'e6\'a3\'ac\'d6\'bb\'d3\'d0\'d3\'c3\'bb\'a7\'b5\'e3\'bb\'f7\'c1\'cb\'b7\'a2\'cb\'cd\'b2\'c5\'bf\'c9\'b7\'a2\'cb\'cd\'a1\'a3
+\f2  
+\f1 \'b2\'bb\'b9\'fd\'a3\'ac\'b4\'cb\'d6\'d6\'b7\'bd\'ca\'bd\'d7\'ee\'b7\'fb\'ba\'cf\'c6\'bb\'b9\'fb\'b5\'c4\'d2\'d4\'d3\'c3\'bb\'a7\'d6\'c1\'c9\'cf\'b5\'c4\'d4\'ad\'d4\'f2\'a1\'a3
+\f2 \cf3 \
+    \
+    \cf2 //
+\f1 \'d2\'ec\'b3\'a3\'b5\'c4\'cb\'f9\'d3\'d0\'d0\'c5\'cf\'a2
+\f2 ==
+\f1 \'bc\'b4\'d2\'aa\'b7\'b5\'bb\'d8\'b5\'bd\'b7\'fe\'ce\'f1\'c6\'f7\'bb\'f2\'d3\'ca\'cf\'e4\'b5\'c4\'d2\'ec\'b3\'a3\'d0\'c5\'cf\'a2
+\f2 \cf3 \
+    \cf5 NSString\cf3  *exInfo=[\cf5 NSString\cf3  \cf5 stringWithFormat\cf3 :\cf7 @"
+\f1 \'c9\'e8\'b1\'b8\'c3\'fb\'b3\'c6\'a3\'ba
+\f2 %@\\n
+\f1 \'c9\'e8\'b1\'b8\'a3\'ba
+\f2 %@\\n
+\f1 \'c9\'e8\'b1\'b8\'b5\'c4\'cf\'b5\'cd\'b3\'b0\'e6\'b1\'be
+\f2 :%@\\n
+\f1 \'c9\'e8\'b1\'b8\'cf\'b5\'cd\'b3\'c3\'fb\'b3\'c6
+\f2 :%@\\n
+\f1 \'b7\'a2\'c9\'fa\'b1\'c0\'c0\'a3\'ca\'b1\'bc\'e4
+\f2 :%@\\n
+\f1 \'d2\'ec\'b3\'a3\'c0\'e0\'d0\'cd
+\f2 :%@\\n
+\f1 \'b1\'c0\'c0\'a3\'b5\'c4\'d4\'ad\'d2\'f2
+\f2 :%@\\n
+\f1 \'b5\'b1\'c7\'b0\'b5\'f7\'d3\'c3\'d5\'bb\'d0\'c5\'cf\'a2
+\f2 :%@\\n
+\f1 \'b5\'b1\'c7\'b0\'b5\'f7\'d3\'c3\'d5\'bb\'b5\'d8\'d6\'b7\'a3\'ba
+\f2 %@\\n"\cf3 ,deviceName,model,systemVersion,systemName,now,exName,exReason,symbols,addresses];\
+    \cf5 NSLog\cf3 (\cf7 @"%@"\cf3 ,exInfo);\
+    \
+    \cf2 //
+\f1 \'b0\'d1\'d2\'ec\'b3\'a3\'d0\'c5\'cf\'a2\'b7\'a2\'d6\'c1\'bf\'aa\'b7\'a2\'d5\'df\'d3\'ca\'cf\'e4
+\f2 \cf3 \
+    \cf5 NSString\cf3  *urlStr=[\cf5 NSString\cf3  \cf5 stringWithFormat\cf3 :\cf7 @"mailto://1093031562@qq.com?subject=bug
+\f1 \'b1\'a8\'b8\'e6\'a3\'ac\'b8\'d0\'d0\'bb\'c4\'fa\'b5\'c4\'c5\'e4\'ba\'cf\'a3\'a1
+\f2 &body=%@"\cf3 ,exInfo];\
+    \cf5 NSURL\cf3  *url=[\cf5 NSURL\cf3  \cf5 URLWithString\cf3 :[urlStr \cf5 stringByAddingPercentEscapesUsingEncoding\cf3 :\cf5 NSUTF8StringEncoding\cf3 ]];\
+    [[\cf5 UIApplication\cf3  \cf5 sharedApplication\cf3 ]\cf5 openURL\cf3 :url];\
+\
+    \
+\}\
+\
+}
