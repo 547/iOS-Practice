@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Internationalization
+
+  Created by mac on 16/3/17.
+  Copyright © 2016年 Seven. All rights reserved.
+*/
+//内容国际化
+"labelText"="label Text";
+"image"="1.png";

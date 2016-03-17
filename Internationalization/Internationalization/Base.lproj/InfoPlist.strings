@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Internationalization
+
+  Created by mac on 16/3/17.
+  Copyright © 2016年 Seven. All rights reserved.
+*/
+//国际化文件
+CFBundleDisplayName="English";
