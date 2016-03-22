@@ -84,7 +84,7 @@
     if (pa.state==UIGestureRecognizerStateBegan)
     {
         if (shouldEraser) {
-        line=[[SWLine alloc]initWithLineColor:[colors lastObject]];
+            line=[[SWLine alloc]initWithLineColor:[colors lastObject]];
         }else{
         line=[[SWLine alloc]initWithLineColor:colors[seg.selectedSegmentIndex]];
         }
@@ -123,13 +123,13 @@
 -(void)save
 {
     UIImage *image=[self screenShots];
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);//保存到相册中
 }
 #pragma mark==截屏
 -(UIImage *)screenShots
 {
     UIGraphicsBeginImageContext(self.view.frame.size);
-    CGContextRef context=UIGraphicsGetCurrentContext();
+    CGContextRef context=UIGraphicsGetCurrentContext();//创建一个画布
     [view.layer renderInContext:context];
     UIImage *image=UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
