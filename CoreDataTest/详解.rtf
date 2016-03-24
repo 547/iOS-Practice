@@ -1,0 +1,1333 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 HiraginoSansGB-W3;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset134 STSongti-SC-Regular;}
+{\colortbl;\red255\green255\blue255;\red15\green116\blue1;\red170\green12\blue145;\red92\green38\blue153;
+\red46\green13\blue110;\red28\green2\blue207;\red196\green26\blue22;\red63\green110\blue116;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+\
+\pard\pardeftab720
+
+\f1\b\fs52 \cf0 \expnd0\expndtw0\kerning0
+coredata\'bc\'f2\'b5\'a5\'ca\'b9\'d3\'c3\'a3\'ac\'b2\'e5\'c9\'be\'b8\'c4\'b2\'e9
+\fs32 \expnd0\expndtw0\kerning0
+\uc0\u160 \u160 
+\f0\b0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 http://wbqingheng.blog.163.com/blog/static/179383760201473103649515/\
+\pard\pardeftab720
+
+\f2\fs22 \cf2 \expnd0\expndtw0\kerning0
+/**\
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0*/\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)openDB\
+\{\
+\'a0 \'a0 \cf2 \expnd0\expndtw0\kerning0
+/*\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'bb\'d8\'b9\'cb
+\f2 \expnd0\expndtw0\kerning0
+SQLite
+\f3 \expnd0\expndtw0\kerning0
+\'b5\'c4\'b2\'d9\'d7\'f7\'b7\'bd\'ca\'bd\'a3\'a8\'b3\'d6\'be\'c3\'bb\'af\'a3\'a9\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0\
+\'a0\'a0 \'a0 1. opendb
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\'a3\'ac\'c8\'e7\'b9\'fb\'b5\'da\'d2\'bb\'b4\'ce\'d4\'cb\'d0\'d0\'a3\'ac\'bb\'e1\'d4\'da\'c9\'b3\'ba\'d0\'d6\'d0\'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'bf\'e2\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\'d6\'ae\'ba\'f3\'a3\'ac\'bb\'e1\'c9\'fa\'b3\'c9\'d2\'bb\'b8\'f6\'ca\'fd\'be\'dd\'bf\'e2\'c1\'ac\'bd\'d3\'b5\'c4\'be\'e4\'b1\'fa
+\f2 \expnd0\expndtw0\kerning0
+->_db
+\f3 \expnd0\expndtw0\kerning0
+\'a3\'ac\'ba\'f3\'d0\'f8\'b5\'c4\'ca\'fd\'be\'dd\'bf\'e2\'b2\'d9\'d7\'f7\'be\'f9\'bb\'f9\'d3\'da\'b8\'c3\'be\'e4\'b1\'fa\'bd\'f8\'d0\'d0\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'b1\'ed
+\f2 \expnd0\expndtw0\kerning0
+(IF NOT EXISTS)\
+\'a0 \'a0 \'a0\
+\'a0\'a0 \'a0 ** Core Data
+\f3 \expnd0\expndtw0\kerning0
+\'b5\'c4\'b2\'d9\'d7\'f7\'b7\'bd\'ca\'bd
+\f2 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0 \'a0 1. 
+\f3 \expnd0\expndtw0\kerning0
+\'bd\'ab\'cb\'f9\'d3\'d0\'b6\'a8\'d2\'e5\'ba\'c3\'b5\'c4\'ca\'fd\'be\'dd\'c4\'a3\'d0\'cd\'ce\'c4\'bc\'fe\'ba\'cf\'b2\'a2\'b3\'c9\'ce\'aa\'d2\'bb\'b8\'f6\'ca\'fd\'be\'dd\'c4\'a3\'d0\'cd\'a3\'a8
+\f2 \expnd0\expndtw0\kerning0
+NSManagedObjectModel
+\f3 \expnd0\expndtw0\kerning0
+\'a3\'a9
+\f2 \expnd0\expndtw0\kerning0
+\
+\'a0 \'a0 \'a0 \'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'bd\'a8\'c1\'a2\'c6\'f0\'d5\'eb\'b6\'d4\'ca\'b5\'cc\'e5\'b6\'d4\'d3\'a6\'b5\'c4\'ca\'fd\'be\'dd\'b1\'ed\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+SQL
+\f3 \expnd0\expndtw0\kerning0
+\'d3\'ef\'be\'e4\'a3\'ac\'d2\'d4\'b1\'e3\'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'b1\'ed\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'d3\'c3\'ca\'fd\'be\'dd\'c4\'a3\'d0\'cd\'c0\'b4\'b4\'b4\'bd\'a8\'b3\'d6\'be\'c3\'bb\'af\'b4\'e6\'b4\'a2\'b5\'f7\'b6\'c8\'a3\'ac\'b4\'cb\'ca\'b1\'be\'cd\'be\'df\'b1\'b8\'c1\'cb\'b4\'b4\'bd\'a8\'b1\'ed\'b5\'c4\'c4\'dc\'c1\'a6\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'ce\'aa\'b4\'e6\'b4\'a2\'b5\'f7\'b6\'c8\'cc\'ed\'bc\'d3\'b3\'d6\'be\'c3\'bb\'af\'b5\'c4\'ca\'fd\'be\'dd\'b4\'e6\'b4\'a2\'a3\'a8
+\f2 \expnd0\expndtw0\kerning0
+SQLite
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'fd\'be\'dd\'bf\'e2\'a3\'a9\'a3\'ac\'c8\'e7\'b9\'fb\'c3\'bb\'d3\'d0\'a3\'ac\'d0\'c2\'bd\'a8\'b2\'a2\'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'b1\'ed\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb\'d2\'d1\'be\'ad\'b4\'e6\'d4\'da\'a3\'ac\'d6\'b1\'bd\'d3\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\'a1\'a3\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0\
+\'a0 \'a0 \'a0 \'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\'d6\'ae\'ba\'f3\'a3\'ac\'bb\'e1\'c5\'d0\'b6\'cf\'ca\'b5\'cc\'e5\'b5\'b1\'c7\'b0\'b5\'c4\'bd\'e1\'b9\'b9\'d3\'eb\'ca\'fd\'be\'dd\'b1\'ed\'b5\'c4\'c3\'e8\'ca\'f6\'bd\'e1\'b9\'b9\'ca\'c7\'b7\'f1\'d2\'bb\'d6\'c2\'a3\'ac\'c8\'e7\'b9\'fb\'b2\'bb\'d2\'bb\'d6\'c2\'a3\'ac\'bb\'e1\'cc\'e1\'ca\'be\'b4\'f2\'bf\'aa\'ca\'a7\'b0\'dc\'a3\'a1\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 */\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'b4\'bd\'a8\'ca\'fd\'be\'dd\'bf\'e2
+\f2 \expnd0\expndtw0\kerning0
+\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 1. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'b5\'c0\'fd\'bb\'af\'ca\'fd\'be\'dd\'c4\'a3\'d0\'cd
+\f2 \expnd0\expndtw0\kerning0
+(
+\f3 \expnd0\expndtw0\kerning0
+\'bd\'ab\'cb\'f9\'d3\'d0\'b6\'a8\'d2\'e5\'b5\'c4\'c4\'a3\'d0\'cd\'b6\'bc\'bc\'d3\'d4\'d8\'bd\'f8\'c0\'b4
+\f2 \expnd0\expndtw0\kerning0
+)
+\f3 \expnd0\expndtw0\kerning0
+\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// merge\'97\'97
+\f3 \expnd0\expndtw0\kerning0
+\'ba\'cf\'b2\'a2
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+NSManagedObjectModel\expnd0\expndtw0\kerning0
+ *model = [\expnd0\expndtw0\kerning0
+NSManagedObjectModel\expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+mergedModelFromBundles\cf4 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf4 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'b5\'c0\'fd\'bb\'af\'b3\'d6\'be\'c3\'bb\'af\'b4\'e6\'b4\'a2\'b5\'f7\'b6\'c8\'a3\'ac\'d2\'aa\'bd\'a8\'c1\'a2\'c6\'f0\'c7\'c5\'c1\'ba\'a3\'ac\'d0\'e8\'d2\'aa\'c4\'a3\'d0\'cd\
+\pard\pardeftab720
+
+\f2 \cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+NSPersistentStoreCoordinator\expnd0\expndtw0\kerning0
+ *store = [[\expnd0\expndtw0\kerning0
+NSPersistentStoreCoordinator\expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+alloc\cf4 \expnd0\expndtw0\kerning0
+] \cf5 \expnd0\expndtw0\kerning0
+initWithManagedObjectModel\cf4 \expnd0\expndtw0\kerning0
+:model];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6\'b3\'d6\'be\'c3\'bb\'af\'b5\'c4\'ca\'fd\'be\'dd\'bf\'e2\'b5\'bd\'b4\'e6\'b4\'a2\'b5\'f7\'b6\'c8\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3.1 
+\f3 \expnd0\expndtw0\kerning0
+\'bd\'a8\'c1\'a2\'ca\'fd\'be\'dd\'bf\'e2\'b1\'a3\'b4\'e6\'d4\'da\'c9\'b3\'ba\'d0\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+URL\
+\pard\pardeftab720
+\cf5 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSArray\cf5 \expnd0\expndtw0\kerning0
+ *docs = \expnd0\expndtw0\kerning0
+NSSearchPathForDirectoriesInDomains\expnd0\expndtw0\kerning0
+(\expnd0\expndtw0\kerning0
+NSDocumentDirectory\expnd0\expndtw0\kerning0
+, \expnd0\expndtw0\kerning0
+NSUserDomainMask\expnd0\expndtw0\kerning0
+, \cf3 \expnd0\expndtw0\kerning0
+YES\cf5 \expnd0\expndtw0\kerning0
+);\expnd0\expndtw0\kerning0
+\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSString\cf5 \expnd0\expndtw0\kerning0
+ *path = [docs[\cf6 \expnd0\expndtw0\kerning0
+0\cf5 \expnd0\expndtw0\kerning0
+] \expnd0\expndtw0\kerning0
+stringByAppendingPathComponent\expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"my.db"\cf5 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSURL\cf0 \expnd0\expndtw0\kerning0
+ *url = [\cf4 \expnd0\expndtw0\kerning0
+NSURL\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+fileURLWithPath\cf0 \expnd0\expndtw0\kerning0
+:path];\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3.2 
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'f2\'bf\'aa\'bb\'f2\'d5\'df\'d0\'c2\'bd\'a8\'ca\'fd\'be\'dd\'bf\'e2\'ce\'c4\'bc\'fe
+\f2 \expnd0\expndtw0\kerning0
+\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb\'ce\'c4\'bc\'fe\'b2\'bb\'b4\'e6\'d4\'da\'a3\'ac\'d4\'f2\'d0\'c2\'bd\'a8\'d6\'ae\'ba\'f3\'b4\'f2\'bf\'aa\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'b7\'f1\'d5\'df\'d6\'b1\'bd\'d3\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\
+\pard\pardeftab720
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSError\cf0 \expnd0\expndtw0\kerning0
+ *error = \cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+;\
+\pard\pardeftab720
+\cf5 \expnd0\expndtw0\kerning0
+\'a0 \'a0 [store \expnd0\expndtw0\kerning0
+addPersistentStoreWithType\expnd0\expndtw0\kerning0
+:\cf4 \expnd0\expndtw0\kerning0
+NSSQLiteStoreType\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+configuration\expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+URL\expnd0\expndtw0\kerning0
+:url \expnd0\expndtw0\kerning0
+options\expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+error\expnd0\expndtw0\kerning0
+:&error];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ (error) \{\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf4 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\'b3\'f6\'b4\'ed
+\f2 \expnd0\expndtw0\kerning0
+ - %@"\cf4 \expnd0\expndtw0\kerning0
+, error.\expnd0\expndtw0\kerning0
+localizedDescription\expnd0\expndtw0\kerning0
+);\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \} \cf3 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'b4\'f2\'bf\'aa\'ca\'fd\'be\'dd\'bf\'e2\'b3\'c9\'b9\'a6\'a3\'a1
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0\'a0 \'a0 \'a0 \'a0\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \cf8 \expnd0\expndtw0\kerning0
+_context\cf4 \expnd0\expndtw0\kerning0
+ = [[\expnd0\expndtw0\kerning0
+NSManagedObjectContext\expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+alloc\cf4 \expnd0\expndtw0\kerning0
+] \cf5 \expnd0\expndtw0\kerning0
+init\cf4 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 \'a0 \'a0\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \cf8 \expnd0\expndtw0\kerning0
+_context\cf4 \expnd0\expndtw0\kerning0
+.\expnd0\expndtw0\kerning0
+persistentStoreCoordinator\expnd0\expndtw0\kerning0
+ = store;\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \}\
+\}\
+\pard\pardeftab720
+
+\f1\fs32 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs22 \cf2 \expnd0\expndtw0\kerning0
+/**\
+\'a0
+\f3 \expnd0\expndtw0\kerning0
+\'d0\'c2\'d4\'f6\'b8\'f6\'c8\'cb\'bc\'c7\'c2\'bc\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0*/\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)addPerson\
+\{\
+\'a0 \'a0 \cf2 \expnd0\expndtw0\kerning0
+/**\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'bb\'d8\'b9\'cb
+\f2 \expnd0\expndtw0\kerning0
+SQL
+\f3 \expnd0\expndtw0\kerning0
+\'d0\'c2\'d4\'f6\'bc\'c7\'c2\'bc\'b5\'c4\'b9\'fd\'b3\'cc\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0\
+\'a0\'a0 \'a0 1. 
+\f3 \expnd0\expndtw0\kerning0
+\'c6\'b4\'bd\'d3\'d2\'bb\'b8\'f6
+\f2 \expnd0\expndtw0\kerning0
+INSERT
+\f3 \expnd0\expndtw0\kerning0
+\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+SQL
+\f3 \expnd0\expndtw0\kerning0
+\'d3\'ef\'be\'e4
+\f2 \expnd0\expndtw0\kerning0
+\
+\'a0\'a0 \'a0 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'d6\'b4\'d0\'d0
+\f2 \expnd0\expndtw0\kerning0
+SQL\
+\'a0\'a0 \'a0 */\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 1. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'b5\'c0\'fd\'bb\'af\'b2\'a2\'c8\'c3
+\f2 \expnd0\expndtw0\kerning0
+context\'93
+\f3 \expnd0\expndtw0\kerning0
+\'d7\'bc\'b1\'b8
+\f2 \expnd0\expndtw0\kerning0
+\'94
+\f3 \expnd0\expndtw0\kerning0
+\'bd\'ab\'d2\'bb\'cc\'f5\'b8\'f6\'c8\'cb\'bc\'c7\'c2\'bc\'d4\'f6\'bc\'d3\'b5\'bd\'ca\'fd\'be\'dd\'bf\'e2\
+\pard\pardeftab720
+
+\f2 \cf5 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf8 \expnd0\expndtw0\kerning0
+Person\cf5 \expnd0\expndtw0\kerning0
+ *p = [\cf4 \expnd0\expndtw0\kerning0
+NSEntityDescription\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+insertNewObjectForEntityForName\expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Person"\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+inManagedObjectContext\expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+_context\cf5 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'b8\'f6\'c8\'cb\'d0\'c5\'cf\'a2
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 p.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+ = \cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'d5\'c5\'c0\'cf\'cd\'b7
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 p.\cf8 \expnd0\expndtw0\kerning0
+age\cf0 \expnd0\expndtw0\kerning0
+ = \cf6 \expnd0\expndtw0\kerning0
+@10\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 p.\cf8 \expnd0\expndtw0\kerning0
+phoneNo\cf0 \expnd0\expndtw0\kerning0
+ = \cf7 \expnd0\expndtw0\kerning0
+@"100"\cf0 \expnd0\expndtw0\kerning0
+;\
+\pard\pardeftab720
+\cf5 \expnd0\expndtw0\kerning0
+\'a0 \'a0 p.\cf8 \expnd0\expndtw0\kerning0
+image\cf5 \expnd0\expndtw0\kerning0
+ = \expnd0\expndtw0\kerning0
+UIImagePNGRepresentation\expnd0\expndtw0\kerning0
+([\cf4 \expnd0\expndtw0\kerning0
+UIImage\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+imageNamed\expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'cd\'b7\'cf\'f1
+\f2 \expnd0\expndtw0\kerning0
+1"\cf5 \expnd0\expndtw0\kerning0
+]);\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'d0\'c2\'d4\'f6\'ca\'e9\'a3\'ac\'ca\'b5\'c0\'fd\'bb\'af\'b2\'a2\'cd\'a8\'d6\'aa\'c9\'cf\'cf\'c2\'ce\'c4\'d7\'bc\'b1\'b8\'bc\'d3\'ca\'e9\
+\pard\pardeftab720
+
+\f2 \cf5 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf8 \expnd0\expndtw0\kerning0
+Book\cf5 \expnd0\expndtw0\kerning0
+ *b = [\cf4 \expnd0\expndtw0\kerning0
+NSEntityDescription\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+insertNewObjectForEntityForName\expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Book"\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+inManagedObjectContext\expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+_context\cf5 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 b.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+ = \cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'cc\'ab\'bc\'ab\'d5\'e6\'be\'ad
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 b.\cf8 \expnd0\expndtw0\kerning0
+price\cf0 \expnd0\expndtw0\kerning0
+ = \cf6 \expnd0\expndtw0\kerning0
+@20000.99\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 b.\cf8 \expnd0\expndtw0\kerning0
+author\cf0 \expnd0\expndtw0\kerning0
+ = \cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'cc\'ab\'bc\'ab\'ba\'f6\'d3\'c6
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf5 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf8 \expnd0\expndtw0\kerning0
+Book\cf5 \expnd0\expndtw0\kerning0
+ *b2 = [\cf4 \expnd0\expndtw0\kerning0
+NSEntityDescription\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+insertNewObjectForEntityForName\expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Book"\cf5 \expnd0\expndtw0\kerning0
+ \expnd0\expndtw0\kerning0
+inManagedObjectContext\expnd0\expndtw0\kerning0
+:\cf8 \expnd0\expndtw0\kerning0
+_context\cf5 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 b2.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+ = \cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'d2\'bb\'d1\'f4\'c9\'f1\'b9\'a6
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 b2.\cf8 \expnd0\expndtw0\kerning0
+price\cf0 \expnd0\expndtw0\kerning0
+ = \cf6 \expnd0\expndtw0\kerning0
+@0.99\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 b2.\cf8 \expnd0\expndtw0\kerning0
+author\cf0 \expnd0\expndtw0\kerning0
+ = \cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'c0\'cf\'ba\'f6\'d3\'c6
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+;\
+\
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSSet\cf0 \expnd0\expndtw0\kerning0
+ *bookSet = [\cf4 \expnd0\expndtw0\kerning0
+NSSet\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+setWithObjects\cf0 \expnd0\expndtw0\kerning0
+:b, b2, \cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0 \'a0 p.\cf8 \expnd0\expndtw0\kerning0
+books\cf0 \expnd0\expndtw0\kerning0
+ = bookSet;\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'b1\'a3\'b4\'e6
+\f2 \expnd0\expndtw0\kerning0
+(
+\f3 \expnd0\expndtw0\kerning0
+\'c8\'c3
+\f2 \expnd0\expndtw0\kerning0
+context
+\f3 \expnd0\expndtw0\kerning0
+\'b1\'a3\'b4\'e6\'b5\'b1\'c7\'b0\'b5\'c4\'d0\'de\'b8\'c4
+\f2 \expnd0\expndtw0\kerning0
+)\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ ([\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+save\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+]) \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'d0\'c2\'d4\'f6\'b3\'c9\'b9\'a6
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0 \'a0 \} \cf3 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'d0\'c2\'d4\'f6\'ca\'a7\'b0\'dc
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0 \'a0 \}\
+\}\
+\pard\pardeftab720
+
+\f1\fs32 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs22 \cf2 \expnd0\expndtw0\kerning0
+/**\
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'c9\'be\'b3\'fd\'bc\'c7\'c2\'bc
+\f2 \expnd0\expndtw0\kerning0
+\
+\'a0*/\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)removePerson\
+\{\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 1. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'b5\'c0\'fd\'bb\'af\'b2\'e9\'d1\'af\'c7\'eb\'c7\'f3
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ *request = [\expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+fetchRequestWithEntityName\cf4 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Person"\cf4 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'ce\'bd\'b4\'ca\'cc\'f5\'bc\'fe
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 request.\cf4 \expnd0\expndtw0\kerning0
+predicate\cf0 \expnd0\expndtw0\kerning0
+ = [\cf4 \expnd0\expndtw0\kerning0
+NSPredicate\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+predicateWithFormat\cf0 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"name = '
+\f3 \expnd0\expndtw0\kerning0
+\'d5\'c5\'c0\'cf\'cd\'b7
+\f2 \expnd0\expndtw0\kerning0
+'"\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'d3\'c9\'c9\'cf\'cf\'c2\'ce\'c4\'b2\'e9\'d1\'af\'ca\'fd\'be\'dd
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *result = [\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+executeFetchRequest\cf0 \expnd0\expndtw0\kerning0
+:request \cf5 \expnd0\expndtw0\kerning0
+error\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 4. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'e4\'b3\'f6\'bd\'e1\'b9\'fb
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (\cf8 \expnd0\expndtw0\kerning0
+Person\cf0 \expnd0\expndtw0\kerning0
+ *person \cf3 \expnd0\expndtw0\kerning0
+in\cf0 \expnd0\expndtw0\kerning0
+ result) \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"%@ %@ %@"\cf0 \expnd0\expndtw0\kerning0
+, person.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+, person.\cf8 \expnd0\expndtw0\kerning0
+age\cf0 \expnd0\expndtw0\kerning0
+, person.\cf8 \expnd0\expndtw0\kerning0
+phoneNo\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0\'a0 \'a0 \'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'c9\'be\'b3\'fd\'d2\'bb\'cc\'f5\'bc\'c7\'c2\'bc
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 [\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+deleteObject\cf0 \expnd0\expndtw0\kerning0
+:person];\
+\'a0 \'a0 \'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+break\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 \}\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 5. 
+\f3 \expnd0\expndtw0\kerning0
+\'cd\'a8\'d6\'aa
+\f2 \expnd0\expndtw0\kerning0
+_context
+\f3 \expnd0\expndtw0\kerning0
+\'b1\'a3\'b4\'e6\'ca\'fd\'be\'dd
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+if\cf0 \expnd0\expndtw0\kerning0
+ ([\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+save\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+]) \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'c9\'be\'b3\'fd\'b3\'c9\'b9\'a6
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0 \'a0 \} \cf3 \expnd0\expndtw0\kerning0
+else\cf0 \expnd0\expndtw0\kerning0
+ \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'c9\'be\'b3\'fd\'ca\'a7\'b0\'dc
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0 \'a0 \}\
+\}\
+\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+/**\
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'b8\'fc\'d0\'c2\'ca\'fd\'be\'dd
+\f2 \expnd0\expndtw0\kerning0
+\
+\'a0*\
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da\'b3\'a3\'b9\'e6\'bf\'aa\'b7\'a2\'d6\'d0\'a3\'ac\'d3\'a6\'b8\'c3\'ca\'d7\'cf\'c8\'bc\'d3\'d4\'d8\'cb\'f9\'d3\'d0\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac\'b0\'ef\'b6\'a5\'b5\'bd
+\f2 \expnd0\expndtw0\kerning0
+UITableView
+\f3 \expnd0\expndtw0\kerning0
+\'d6\'d0\'a3\'ac\'b8\'c3\'ca\'fd\'d7\'e9\'d6\'d0\'b1\'a3\'b4\'e6\'cb\'f9\'d3\'d0\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+Person
+\f3 \expnd0\expndtw0\kerning0
+\'bc\'c7\'c2\'bc\'a3\'ac\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb\'ca\'c7\'d5\'e2\'d6\'d6\'c7\'e9\'bf\'f6\'a3\'ac\'d4\'da\'d0\'de\'b8\'c4\'b8\'f6\'c8\'cb\'bc\'c7\'c2\'bc\'ca\'b1\'a3\'ac\'ca\'c7\'ce\'de\'d0\'e8\'d4\'d9\'b4\'ce\'c8\'a5\'b2\'e9\'d1\'af\'ca\'fd\'be\'dd\'bf\'e2\'b5\'c4\'a1\'a3\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0*\
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da\'ca\'b5\'bc\'ca\'bf\'aa\'b7\'a2\'d6\'d0\'a3\'ac\'cd\'a8\'b3\'a3\'ca\'c7\'b4\'d3\'b1\'ed\'b8\'f1\'d6\'d0\'d1\'a1\'d6\'d0\'c4\'b3\'d2\'bb\'d0\'d0\'a3\'ac\'bb\'f1\'c8\'a1\'b5\'bd\'b6\'d4\'d3\'a6\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+NSManagedObject
+\f3 \expnd0\expndtw0\kerning0
+\'a3\'ac\'c8\'bb\'ba\'f3\'bd\'f8\'d0\'d0\'d0\'de\'b8\'c4\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b4\'cb\'a3\'ac\'b1\'e3\'bf\'c9\'d2\'d4\'d6\'bb\'d0\'de\'b8\'c4\'ce\'a8\'d2\'bb\'d2\'bb\'cc\'f5\'bc\'c7\'c2\'bc\'c1\'cb\'a1\'a3\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0*/\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)updatePerson\
+\{\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 1. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'b5\'c0\'fd\'bb\'af\'b2\'e9\'d1\'af\'c7\'eb\'c7\'f3
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ *request = [\expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+fetchRequestWithEntityName\cf4 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Book"\cf4 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'c9\'e8\'d6\'c3\'ce\'bd\'b4\'ca\'cc\'f5\'bc\'fe
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf7 \expnd0\expndtw0\kerning0
+\'a0 \'a0 request.\cf4 \expnd0\expndtw0\kerning0
+predicate\cf7 \expnd0\expndtw0\kerning0
+ = [\cf4 \expnd0\expndtw0\kerning0
+NSPredicate\cf7 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+predicateWithFormat\cf7 \expnd0\expndtw0\kerning0
+:\expnd0\expndtw0\kerning0
+@"author CONTAINS '
+\f3 \expnd0\expndtw0\kerning0
+\'ba\'f6\'d3\'c6
+\f2 \expnd0\expndtw0\kerning0
+'"\expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'d3\'c9\'c9\'cf\'cf\'c2\'ce\'c4\'b2\'e9\'d1\'af\'ca\'fd\'be\'dd
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *result = [\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+executeFetchRequest\cf0 \expnd0\expndtw0\kerning0
+:request \cf5 \expnd0\expndtw0\kerning0
+error\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 4. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'e4\'b3\'f6\'bd\'e1\'b9\'fb
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (\cf8 \expnd0\expndtw0\kerning0
+Book\cf0 \expnd0\expndtw0\kerning0
+ *book \cf3 \expnd0\expndtw0\kerning0
+in\cf0 \expnd0\expndtw0\kerning0
+ result) \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"%@ %@ %@"\cf0 \expnd0\expndtw0\kerning0
+, book.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+, book.\cf8 \expnd0\expndtw0\kerning0
+author\cf0 \expnd0\expndtw0\kerning0
+, book.\cf8 \expnd0\expndtw0\kerning0
+price\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0\'a0 \'a0 \'a0 \'a0\
+\'a0 \'a0 \'a0 \'a0 \cf2 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'b8\'fc\'d0\'c2\'ca\'e9\'c3\'fb
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\
+\'a0 \'a0 \'a0 \'a0 book.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+ = \cf7 \expnd0\expndtw0\kerning0
+@"
+\f3 \expnd0\expndtw0\kerning0
+\'ce\'f7\'d3\'ce\'bc\'c7
+\f2 \expnd0\expndtw0\kerning0
+"\cf0 \expnd0\expndtw0\kerning0
+;\
+\'a0 \'a0 \}\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'cd\'a8\'d6\'aa\'c9\'cf\'cf\'c2\'ce\'c4\'b1\'a3\'b4\'e6\'b1\'a3\'b4\'e6\
+\pard\pardeftab720
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 [\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+save\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+];\
+\
+\}\
+\pard\pardeftab720
+
+\f1\fs32 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f2\fs22 \cf2 \expnd0\expndtw0\kerning0
+/**\
+\'a0*\'a0 
+\f3 \expnd0\expndtw0\kerning0
+\'b2\'e9\'d1\'af\'cb\'f9\'d3\'d0\'d3\'c3\'bb\'a7\'bc\'c7\'c2\'bc\
+
+\f2 \expnd0\expndtw0\kerning0
+\'a0*/\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)allPersons\
+\{\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 1. 
+\f3 \expnd0\expndtw0\kerning0
+\'ca\'b5\'c0\'fd\'bb\'af\'d2\'bb\'b8\'f6\'b2\'e9\'d1\'af
+\f2 \expnd0\expndtw0\kerning0
+(Fetch)
+\f3 \expnd0\expndtw0\kerning0
+\'c7\'eb\'c7\'f3
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ *request = [\expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+fetchRequestWithEntityName\cf4 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Person"\cf4 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 3. 
+\f3 \expnd0\expndtw0\kerning0
+\'cc\'f5\'bc\'fe\'b2\'e9\'d1\'af\'a3\'ac\'cd\'a8\'b9\'fd\'ce\'bd\'b4\'ca\'c0\'b4\'ca\'b5\'cf\'d6\'b5\'c4\
+\pard\pardeftab720
+
+\f2 \cf2 \expnd0\expndtw0\kerning0
+//\'a0 \'a0 request.predicate = [NSPredicate predicateWithFormat:@"age < 60 && name LIKE '*
+\f3 \expnd0\expndtw0\kerning0
+\'ce\'e5
+\f2 \expnd0\expndtw0\kerning0
+'"];\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da\'ce\'bd\'b4\'ca\'d6\'d0
+\f2 \expnd0\expndtw0\kerning0
+CONTAINS
+\f3 \expnd0\expndtw0\kerning0
+\'c0\'e0\'cb\'c6\'d3\'da\'ca\'fd\'be\'dd\'bf\'e2\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+ LIKE '%
+\f3 \expnd0\expndtw0\kerning0
+\'cd\'f5
+\f2 \expnd0\expndtw0\kerning0
+%'\
+//\'a0 \'a0 request.predicate = [NSPredicate predicateWithFormat:@"phoneNo CONTAINS '1'"];\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'c8\'e7\'b9\'fb\'d2\'aa\'cd\'a8\'b9\'fd
+\f2 \expnd0\expndtw0\kerning0
+key path
+\f3 \expnd0\expndtw0\kerning0
+\'b2\'e9\'d1\'af\'d7\'d6\'b6\'ce\'a3\'ac\'d0\'e8\'d2\'aa\'ca\'b9\'d3\'c3
+\f2 \expnd0\expndtw0\kerning0
+%K\
+//\'a0 \'a0 request.predicate = [NSPredicate predicateWithFormat:@"%K CONTAINS '1'", @"phoneNo"];\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d6\'b1\'bd\'d3\'b2\'e9\'d1\'af\'d7\'d6\'b1\'ed\'d6\'d0\'b5\'c4\'cc\'f5\'bc\'fe\
+\pard\pardeftab720
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+// 2. 
+\f3 \expnd0\expndtw0\kerning0
+\'c8\'c3
+\f2 \expnd0\expndtw0\kerning0
+_context
+\f3 \expnd0\expndtw0\kerning0
+\'d6\'b4\'d0\'d0\'b2\'e9\'d1\'af\'ca\'fd\'be\'dd
+\f2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *array = [\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+executeFetchRequest\cf0 \expnd0\expndtw0\kerning0
+:request \cf5 \expnd0\expndtw0\kerning0
+error\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0\'a0 \'a0\
+\'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (\cf8 \expnd0\expndtw0\kerning0
+Person\cf0 \expnd0\expndtw0\kerning0
+ *p \cf3 \expnd0\expndtw0\kerning0
+in\cf0 \expnd0\expndtw0\kerning0
+ array) \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"%@ %@ %@"\cf0 \expnd0\expndtw0\kerning0
+, p.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+, p.\cf8 \expnd0\expndtw0\kerning0
+age\cf0 \expnd0\expndtw0\kerning0
+, p.\cf8 \expnd0\expndtw0\kerning0
+phoneNo\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0\'a0 \'a0 \'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da
+\f2 \expnd0\expndtw0\kerning0
+CoreData
+\f3 \expnd0\expndtw0\kerning0
+\'d6\'d0\'a3\'ac\'b2\'e9\'d1\'af\'ca\'c7\'c0\'c1\'bc\'d3\'d4\'d8\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da
+\f2 \expnd0\expndtw0\kerning0
+CoreData
+\f3 \expnd0\expndtw0\kerning0
+\'b1\'be\'c9\'ed\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+SQL
+\f3 \expnd0\expndtw0\kerning0
+\'b2\'e9\'d1\'af\'d6\'d0\'a3\'ac\'ca\'c7\'b2\'bb\'ca\'b9\'d3\'c3
+\f2 \expnd0\expndtw0\kerning0
+JOIN
+\f3 \expnd0\expndtw0\kerning0
+\'b5\'c4\'a3\'ac\'b2\'bb\'d0\'e8\'d2\'aa\'cd\'e2\'bc\'fc
+\f2 \expnd0\expndtw0\kerning0
+\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d5\'e2\'d6\'d6\'b7\'bd\'ca\'bd\'b5\'c4\'d3\'c5\'b5\'e3\'ca\'c7\'a3\'ba\'c4\'da\'b4\'e6\'d5\'bc\'d3\'c3\'cf\'e0\'b6\'d4\'bd\'cf\'d0\'a1\'a3\'ac\'b5\'ab\'ca\'c7\'b4\'c5\'c5\'cc\'b6\'c1\'d0\'b4\'b5\'c4\'c6\'b5\'c2\'ca\'bb\'e1\'bd\'cf\'b8\'df\
+\pard\pardeftab720
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (\cf8 \expnd0\expndtw0\kerning0
+Book\cf0 \expnd0\expndtw0\kerning0
+ *b \cf3 \expnd0\expndtw0\kerning0
+in\cf0 \expnd0\expndtw0\kerning0
+ p.\cf8 \expnd0\expndtw0\kerning0
+books\cf0 \expnd0\expndtw0\kerning0
+) \{\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"%@ %@ %@"\cf0 \expnd0\expndtw0\kerning0
+, b.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+, b.\cf8 \expnd0\expndtw0\kerning0
+price\cf0 \expnd0\expndtw0\kerning0
+, b.\cf8 \expnd0\expndtw0\kerning0
+author\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0 \'a0 \'a0 \'a0 \}\
+\'a0 \'a0 \}\
+\'a0\'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+//\'a0 \'a0 for (Book *b in array) \{\
+//\'a0 \'a0 \'a0 \'a0 NSLog(@"%@ %@ %@", b.name, b.price, b.author);\
+//\'a0 \'a0 \}\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\}\
+\
+- (\cf3 \expnd0\expndtw0\kerning0
+void\cf0 \expnd0\expndtw0\kerning0
+)queryAllbook\
+\{\
+\pard\pardeftab720
+\cf4 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ *request = [\expnd0\expndtw0\kerning0
+NSFetchRequest\expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+fetchRequestWithEntityName\cf4 \expnd0\expndtw0\kerning0
+:\cf7 \expnd0\expndtw0\kerning0
+@"Book"\cf4 \expnd0\expndtw0\kerning0
+];\expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \cf4 \expnd0\expndtw0\kerning0
+NSArray\cf0 \expnd0\expndtw0\kerning0
+ *arr = [\cf8 \expnd0\expndtw0\kerning0
+_context\cf0 \expnd0\expndtw0\kerning0
+ \cf5 \expnd0\expndtw0\kerning0
+executeFetchRequest\cf0 \expnd0\expndtw0\kerning0
+:request \cf5 \expnd0\expndtw0\kerning0
+error\cf0 \expnd0\expndtw0\kerning0
+:\cf3 \expnd0\expndtw0\kerning0
+nil\cf0 \expnd0\expndtw0\kerning0
+];\
+\'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (\cf8 \expnd0\expndtw0\kerning0
+Book\cf0 \expnd0\expndtw0\kerning0
+ *p \cf3 \expnd0\expndtw0\kerning0
+in\cf0 \expnd0\expndtw0\kerning0
+ arr)\
+\'a0 \'a0 \{\
+\'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"%@ %@ %@"\cf0 \expnd0\expndtw0\kerning0
+, p.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+, p.\cf8 \expnd0\expndtw0\kerning0
+price\cf0 \expnd0\expndtw0\kerning0
+, p.\cf8 \expnd0\expndtw0\kerning0
+author\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0\'a0 \'a0 \'a0 \'a0\
+\pard\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da
+\f2 \expnd0\expndtw0\kerning0
+CoreData
+\f3 \expnd0\expndtw0\kerning0
+\'d6\'d0\'a3\'ac\'b2\'e9\'d1\'af\'ca\'c7\'c0\'c1\'bc\'d3\'d4\'d8\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d4\'da
+\f2 \expnd0\expndtw0\kerning0
+CoreData
+\f3 \expnd0\expndtw0\kerning0
+\'b1\'be\'c9\'ed\'b5\'c4
+\f2 \expnd0\expndtw0\kerning0
+SQL
+\f3 \expnd0\expndtw0\kerning0
+\'b2\'e9\'d1\'af\'d6\'d0\'a3\'ac\'ca\'c7\'b2\'bb\'ca\'b9\'d3\'c3
+\f2 \expnd0\expndtw0\kerning0
+JOIN
+\f3 \expnd0\expndtw0\kerning0
+\'b5\'c4\'a3\'ac\'b2\'bb\'d0\'e8\'d2\'aa\'cd\'e2\'bc\'fc
+\f2 \expnd0\expndtw0\kerning0
+\
+\expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \expnd0\expndtw0\kerning0
+// 
+\f3 \expnd0\expndtw0\kerning0
+\'d5\'e2\'d6\'d6\'b7\'bd\'ca\'bd\'b5\'c4\'d3\'c5\'b5\'e3\'ca\'c7\'a3\'ba\'c4\'da\'b4\'e6\'d5\'bc\'d3\'c3\'cf\'e0\'b6\'d4\'bd\'cf\'d0\'a1\'a3\'ac\'b5\'ab\'ca\'c7\'b4\'c5\'c5\'cc\'b6\'c1\'d0\'b4\'b5\'c4\'c6\'b5\'c2\'ca\'bb\'e1\'bd\'cf\'b8\'df\
+\pard\pardeftab720
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\'a0 \'a0 \'a0 \'a0 \cf3 \expnd0\expndtw0\kerning0
+for\cf0 \expnd0\expndtw0\kerning0
+ (\cf8 \expnd0\expndtw0\kerning0
+Person\cf0 \expnd0\expndtw0\kerning0
+ *b \cf3 \expnd0\expndtw0\kerning0
+in\cf0 \expnd0\expndtw0\kerning0
+ p.\cf8 \expnd0\expndtw0\kerning0
+persons\cf0 \expnd0\expndtw0\kerning0
+) \{\
+\'a0 \'a0 \'a0 \'a0 \'a0 \'a0 \cf5 \expnd0\expndtw0\kerning0
+NSLog\cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+@"%@ %@ %@"\cf0 \expnd0\expndtw0\kerning0
+, b.\cf8 \expnd0\expndtw0\kerning0
+name\cf0 \expnd0\expndtw0\kerning0
+, b.\cf8 \expnd0\expndtw0\kerning0
+age\cf0 \expnd0\expndtw0\kerning0
+, b.\cf8 \expnd0\expndtw0\kerning0
+phoneNo\cf0 \expnd0\expndtw0\kerning0
+);\
+\'a0 \'a0 \'a0 \'a0 \}\
+\
+\'a0 \'a0 \}\
+\}\
+}
