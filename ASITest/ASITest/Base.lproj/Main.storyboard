@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T3-WS-w7M">
+                                <rect key="frame" x="70" y="285" width="30" height="30"/>
+                                <state key="normal" title="get"/>
+                                <connections>
+                                    <action selector="getButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSH-wv-wcl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-oW-ulE">
+                                <rect key="frame" x="162" y="285" width="31" height="30"/>
+                                <state key="normal" title="post"/>
+                                <connections>
+                                    <action selector="postButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPb-3f-R2p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ad-B9-UzM">
+                                <rect key="frame" x="239" y="285" width="30" height="30"/>
+                                <state key="normal" title="上传"/>
+                                <connections>
+                                    <action selector="updataButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SqK-Xo-YKv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfm-wF-7gR">
+                                <rect key="frame" x="50" y="214" width="60" height="30"/>
+                                <state key="normal" title="断点下载"/>
+                                <connections>
+                                    <action selector="duanDianDownLoadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="St1-ae-U39"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LMO-Ms-rYy">
+                                <rect key="frame" x="31" y="148" width="251" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpB-mb-ast">
+                                <rect key="frame" x="239" y="136" width="76" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY4-6T-uxv">
+                                <rect key="frame" x="209" y="214" width="90" height="30"/>
+                                <state key="normal" title="查看网络情况"/>
+                                <connections>
+                                    <action selector="chaKanWangLuoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYg-mn-C7o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBM-BW-2p8">
+                                <rect key="frame" x="130" y="214" width="60" height="30"/>
+                                <state key="normal" title="取消下载"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gyh-Cp-1fo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="downLoadProgress" destination="LMO-Ms-rYy" id="fLn-LM-k92"/>
+                        <outlet property="progressLabel" destination="dpB-mb-ast" id="Jse-DN-A5c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="301"/>
+        </scene>
+    </scenes>
+</document>
